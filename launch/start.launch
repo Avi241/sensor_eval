@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find sensor_eval)/rviz/rplidar.rviz" />
+    <node name="uvc_camera_node" pkg="uvc_camera" type="uvc_camera_node" output="screen">
+        <param name="device" value="/dev/video2" />
+  </node>
+  </launch>
