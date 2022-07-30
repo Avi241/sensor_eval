@@ -17,6 +17,7 @@ change the file start.launch accoordig to your video port
 
 ## clone this repo into your catkin_ws/src 
 ```
+cd ~/catkin_ws/src
 git clone https://github.com/Avi241/sensor_eval
 ```
 
@@ -24,6 +25,7 @@ git clone https://github.com/Avi241/sensor_eval
 ```
 cd ~/catkin_ws
 catkin_make
+source devel/setup.bash
 ```
 
 ## Connect the RP lidar and Camera and Start the nodes 
